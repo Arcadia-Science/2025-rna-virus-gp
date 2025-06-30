@@ -14,8 +14,8 @@ This repository uses conda to manage software environments and installations. Yo
 
 ```{bash}
 TODO: Replace <NAME> with the name of your environment
-mamba env create -n <NAME> --file envs/dev.yml
-conda activate <NAME>
+mamba env create -n rna_virus_gp_env --file envs/dev.yml
+conda activate rna_virus_gp_env
 ```
 
 <details><summary>Developer Notes (click to expand/collapse)</summary>
