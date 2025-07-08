@@ -162,7 +162,7 @@ A network visualization of the G-P map.
 
 Additional architectures:
 
-We also experimented with predicting fitness as a 17th phenotype (g_p_atlas_v2.7.py) and using a graph attention network for the G-P training (g_p_atlas_v2.4_fixed.py) but these performed poorly and need further work. Fitness as Phenotype performs well on phenotypes 1-16 but poorly predicting fitness. The GAT is generally less effective across the board.
+We also experimented with predicting fitness as a 17th phenotype (g_p_atlas_v2.8.py) and using a graph attention network for the G-P training (g_p_atlas_v2.4_fixed.py) but these performed poorly and need further work. Fitness as Phenotype performs well on phenotypes 1-16 but poorly predicting fitness. The GAT is generally less effective across the board.
 
 ### Compute Specifications
 
