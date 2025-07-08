@@ -1,0 +1,110 @@
+{
+  "n_loci": 53,
+  "n_phens": 16,
+  "n_alleles": 3,
+  "phenotypes": {
+    "P01_ACE2_Binding": {
+      "additive_loci": [21, 22, 23, 24],
+      "interactive_loci": [[22, 23], [21, 24]],
+      "dependent_phens": ["P11_Spike_trimer_stability", "P16_RBD_Conformation"]
+    },
+    "P02_Furin_Cleavage": { "additive_loci": [32], "interactive_loci": [] },
+    "P03_Cell_Entry": {
+      "additive_loci": [33, 34, 35],
+      "interactive_loci": [[21, 33], [25, 34], [32, 35]],
+      "dependent_phens": ["P01_ACE2_Binding"]
+    },
+    "P04_Replication_in_upper_airway": {
+      "additive_loci": [7, 8, 11, 12, 13, 14],
+      "interactive_loci": [[11, 13], [7, 12]],
+      "dependent_phens": ["P05_ExoN_Proofreading", "P06_IFN_Blockade"]
+    },
+    "P05_ExoN_Proofreading": {
+      "additive_loci": [15, 16, 17, 18],
+      "interactive_loci": [[9, 15], [10, 16]]
+    },
+    "P06_IFN_Blockade": {
+      "additive_loci": [6, 19, 20, 32, 40, 41, 43, 44],
+      "interactive_loci": [[6, 43], [6, 44], [19, 40]],
+      "dependent_phens": ["P14_Exp_N_Protein", "P15_Exp_ORF6"]
+    },
+    "P07_RNA_transcription": {
+      "additive_loci": [36, 37],
+      "interactive_loci": [],
+      "dependent_phens": ["P04_Replication_in_upper_airway", "P06_IFN_Blockade"]
+    },
+    "P08_N_RNA_Packaging": {
+      "additive_loci": [38, 39],
+      "interactive_loci": [],
+      "dependent_phens": ["P14_Exp_N_Protein"]
+    },
+    "P09_Syncytia_Formation": {
+      "additive_loci": [32],
+      "interactive_loci": [],
+      "dependent_phens": ["P03_Cell_Entry"]
+    },
+    "P10_Virion_Stability": {
+      "additive_loci": [45, 46, 47],
+      "interactive_loci": [[6, 45]],
+      "dependent_phens": ["P08_N_RNA_Packaging", "P11_Spike_trimer_stability"]
+    },
+    "P11_Spike_trimer_stability": {
+      "additive_loci": [25, 26],
+      "interactive_loci": [[25, 32]]
+    },
+    "P12_Antigenicity_Spike_NTD": {
+      "additive_loci": [29, 30, 31],
+      "interactive_loci": [],
+      "dependent_phens": ["P11_Spike_trimer_stability"]
+    },
+    "P13_Exp_Spike": { "additive_loci": [27, 28], "interactive_loci": [[1, 48], [3, 48]] },
+    "P14_Exp_N_Protein": { "additive_loci": [], "interactive_loci": [[2, 49], [5, 49]] },
+    "P15_Exp_ORF6": { "additive_loci": [], "interactive_loci": [[4, 50]] },
+    "P16_RBD_Conformation": { "additive_loci": [53], "interactive_loci": [[25, 53]] }
+  },
+  "custom_weights": {
+    "P01_ACE2_Binding": [
+      { "locus": 22, "allele": 1, "weight": 3.5 },
+      { "locus": 21, "allele": 2, "weight": 2.0 },
+      { "locus": 24, "allele": 2, "weight": 1.8 }
+    ],
+    "P02_Furin_Cleavage": [
+      { "locus": 32, "allele": 1, "weight": 2.0 },
+      { "locus": 32, "allele": 2, "weight": 4.5 }
+    ],
+    "P03_Cell_Entry": [
+      { "locus": 35, "allele": 2, "weight": 0.7 }
+    ],
+    "P04_Replication_in_upper_airway": [
+      { "locus": 11, "allele": 1, "weight": 1.5 },
+      { "locus": 11, "allele": 2, "weight": 1.5 },
+      { "locus": 12, "allele": 2, "weight": 1.0 }
+    ],
+    "P06_IFN_Blockade": [
+      { "locus": 32, "allele": 1, "weight": 3.0 },
+      { "locus": 40, "allele": 2, "weight": 3.5 }
+    ],
+    "P07_RNA_transcription": [
+      { "locus": 36, "allele": 1, "weight": 2.5 },
+      { "locus": 37, "allele": 1, "weight": 2.5 }
+    ],
+    "P09_Syncytia_Formation": [
+      { "locus": 32, "allele": 1, "weight": 1.5 },
+      { "locus": 32, "allele": 2, "weight": 3.0 }
+    ],
+    "P11_Spike_trimer_stability": [
+      { "locus": 25, "allele": 1, "weight": 2.5 },
+      { "locus": 25, "allele": 2, "weight": 2.5 }
+    ],
+    "P12_Antigenicity_Spike_NTD": [
+      { "locus": 29, "allele": 1, "weight": -4.0 },
+      { "locus": 30, "allele": 1, "weight": -4.0 },
+      { "locus": 29, "allele": 2, "weight": -2.0 },
+      { "locus": 30, "allele": 2, "weight": -2.0 },
+      { "locus": 31, "allele": 2, "weight": -2.0 }
+    ],
+    "P16_RBD_Conformation": [
+      { "locus": 24, "allele": 1, "weight": 0.5 }
+    ]
+  }
+}
